@@ -5,18 +5,19 @@ const form = document.querySelector(".form_js"),
     greeting = document.querySelector("h4")
 
 
+const User_LS = "currentUser"
 
 
-function handleSubmit(event) {
-    event.preventDefault();
-    const currentValue = input.value;
+function loadName() {
+    const currentUser = localStorage.getItem(User_LS);
+    
 }
 
 
 
 
 function init() {
-    
+    loadName();
 }
 
 init();
