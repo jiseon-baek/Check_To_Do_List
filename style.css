@@ -10,3 +10,7 @@
   --font-size-medium: 24px;
   --font-size-small: 20px;
 }
+
+* {
+  font-family: 'KoHo', sans-serif;
+}
