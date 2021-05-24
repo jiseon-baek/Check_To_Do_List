@@ -14,3 +14,12 @@
 * {
   font-family: 'KoHo', sans-serif;
 }
+
+#clock span {
+  font-weight: bold;
+  font-size: var(--font-size-medium);
+}
+
+#clock h1 {
+  font-size: var(--font-size-large);
+}
