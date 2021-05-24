@@ -11,8 +11,12 @@ function getTime() {
     let hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
+    const ampm = hours >= 12 ? 'pm' : 'am';
+
+    hours = hours %= 12;
+    hours = hours ? hours : 12;
    
-    clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0️${minutes}` : minutes}:${seconds < 10 ? `0️${seconds}` : seconds}`
+    clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0️${minutes}` : minutes}:${seconds < 10 ? `0️${seconds}` : seconds} ${ampm}`
 }
 
 
