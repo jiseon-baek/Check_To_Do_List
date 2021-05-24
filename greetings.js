@@ -7,8 +7,16 @@ const form = document.querySelector(".form_js"),
 
 
 
-function init() {
+function handleSubmit(event) {
+    event.preventDefault();
+    const currentValue = input.value;
+}
 
+
+
+
+function init() {
+    
 }
 
 init();
