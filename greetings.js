@@ -10,8 +10,14 @@ const User_LS = "currentUser",
 
 
 
+function handleSubmit(event) {
+    event.preventDefault();
+}
+
+
 function askForName() {
     form.classList.add(Showing_CN);
+    form.addEventListener('submit', handleSubmit);
 }
 
 
