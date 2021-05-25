@@ -12,6 +12,9 @@ const User_LS = "currentUser",
 
 function handleSubmit(event) {
     event.preventDefault();
+    const currentValue = input.value;
+    showGreeting(currentValue);
+    
 }
 
 
