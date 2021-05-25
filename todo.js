@@ -8,13 +8,21 @@ const toDoForm = document.querySelector(".toDoForm_js"),
 
 const ToDos_LS = "toDos";
 
-const toDos = [];
+let toDos = [];
+
+
 
 
 function deleteToDo(event) {
     const btn = event.target;
     const li = btn.parentNode;
     toDoList.removeChild(li);
+    const cleanToDos = toDos.filter(function(toDo) {
+        return toDo.id !== parseInt(li.id);
+    });
+    toDos = cleanToDos
+    saveToDos();
+    
 }
 
 
