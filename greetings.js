@@ -9,7 +9,7 @@ const User_LS = "currentUser",
     Showing_CN = "showing";
 
 
-function paintGreeting(text) {
+function showGreeting(text) {
     form.classList.remove(Showing_CN);
     greeting.classList.add(Showing_CN);
     greeting.innerText = `Hello ${text}`;
@@ -20,11 +20,9 @@ function loadName() {
     if(currentUser === null) {
 
     } else {
-        paintGreeting(currentUser);
+        showGreeting(currentUser);
     }
 }
-
-
 
 
 function init() {
