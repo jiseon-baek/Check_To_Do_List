@@ -20,6 +20,7 @@ function showToDo(text) {
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
+    li.id = newId;
     toDoList.appendChild(li);
     const toDoObj = {
         text: text,
