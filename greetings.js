@@ -9,12 +9,16 @@ const User_LS = "currentUser",
     Showing_CN = "showing";
 
 
+function saveName(text) {
+    localStorage.setItem(User_LS, text);
+}
+
 
 function handleSubmit(event) {
     event.preventDefault();
     const currentValue = input.value;
     showGreeting(currentValue);
-    
+    saveName(currentValue);
 }
 
 
