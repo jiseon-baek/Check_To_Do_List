@@ -37,8 +37,8 @@ function handleSubmit(event) {
 
 
 function loadToDos() {
-    const toDos = localStorage.getItem(ToDos_LS);
-    if(toDos !== null) {
+    const loadedToDos = localStorage.getItem(ToDos_LS);
+    if(loadedToDos !== null) {
 
     }
 }
