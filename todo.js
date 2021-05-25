@@ -10,8 +10,16 @@ const ToDos_LS = "toDos";
 
 
 function showToDo(text) {
-    console.log(text);
+    const li = document.createElement("li");
+    const delBtn = document.createElement("button");
+    delBtn.innerText = "⭕️"
+    const span = document.createElement("span");
+    span.innerText = text;
+    li.appendChild(span);
+    li.appendChild(delBtn);
+    toDoList.appendChild(li);
 }
+
 
 function handleSubmit(event) {
     event.preventDefault();
