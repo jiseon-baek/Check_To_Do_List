@@ -10,13 +10,14 @@ const ToDos_LS = "toDos";
 
 
 function showToDo(text) {
-
+    console.log(text);
 }
 
 function handleSubmit(event) {
     event.preventDefault();
     const currentValue = toDoInput.value;
     showToDo(currentValue);
+    toDoInput.value = "";
 }
 
 
