@@ -9,6 +9,17 @@ const toDoForm = document.querySelector(".toDoForm_js"),
 const ToDos_LS = "toDos";
 
 
+function showToDo(text) {
+
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    const currentValue = toDoInput.value;
+    showToDo(currentValue);
+}
+
+
 function loadToDos() {
     const toDos = localStorage.getItem(ToDos_LS);
     if(toDos !== null) {
@@ -19,7 +30,7 @@ function loadToDos() {
 
 function init() {
     loadToDos();
-    
+    toDoForm.addEventListener('submit', handleSubmit);
 }
 
 init();
