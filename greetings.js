@@ -9,6 +9,12 @@ const User_LS = "currentUser",
     Showing_CN = "showing";
 
 
+
+function askForName() {
+    form.classList.add(Showing_CN);
+}
+
+
 function showGreeting(text) {
     form.classList.remove(Showing_CN);
     greeting.classList.add(Showing_CN);
@@ -18,7 +24,7 @@ function showGreeting(text) {
 function loadName() {
     const currentUser = localStorage.getItem(User_LS);
     if(currentUser === null) {
-
+        askForName();
     } else {
         showGreeting(currentUser);
     }
