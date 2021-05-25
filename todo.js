@@ -8,6 +8,8 @@ const toDoForm = document.querySelector(".toDoForm_js"),
 
 const ToDos_LS = "toDos";
 
+const toDos = [];
+
 
 function showToDo(text) {
     const li = document.createElement("li");
