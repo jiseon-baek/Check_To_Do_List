@@ -11,6 +11,11 @@ const ToDos_LS = "toDos";
 const toDos = [];
 
 
+function saveToDos() { //이 함수는 toDos를 가져와 로컬에 저장하는 일을 함.
+    localStorage.setItem(ToDos_LS, JSON.stringify(toDos));
+}
+
+
 function showToDo(text) {
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
@@ -27,6 +32,7 @@ function showToDo(text) {
         id: newId
     }
     toDos.push(toDoObj);
+    saveToDos();
 }
 
 
