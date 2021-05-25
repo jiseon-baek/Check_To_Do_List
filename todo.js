@@ -11,6 +11,13 @@ const ToDos_LS = "toDos";
 const toDos = [];
 
 
+function deleteToDo(event) {
+    const btn = event.target;
+    const li = btn.parentNode;
+    toDoList.removeChild(li);
+}
+
+
 function saveToDos() { //이 함수는 toDos를 가져와 로컬에 저장하는 일을 함.
     localStorage.setItem(ToDos_LS, JSON.stringify(toDos));
 }
@@ -22,6 +29,7 @@ function showToDo(text) {
     const span = document.createElement("span");
     const newId = toDos.length + 1;
     delBtn.innerText = "⭕️"
+    delBtn.addEventListener('click', deleteToDo);
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
