@@ -31,7 +31,7 @@ function askForName() {
 function showGreeting(text) {
     form.classList.remove(Showing_CN);
     greeting.classList.add(Showing_CN);
-    greeting.innerText = `Hello ${text}🧡`;
+    greeting.innerText = `Hello ${text}🐥`;
 }
 
 function loadName() {
