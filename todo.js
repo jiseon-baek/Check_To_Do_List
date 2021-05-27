@@ -42,6 +42,8 @@ function showToDo(text) {
     li.appendChild(span);
     li.appendChild(delBtn);
     li.id = newId;
+    li.style.listStyle= "none";
+    li.style.textAlign = "center";
     toDoList.appendChild(li);
     const toDoObj = {
         text: text,
