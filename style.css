@@ -36,6 +36,7 @@ input {
   border: 1px solid var(--color-black);
   border: none;
   font-size: 15px;
+  text-align: center;
 }
 
 h1 {
@@ -44,11 +45,11 @@ h1 {
 
 h4 {
   font-size: var(--font-size-medium);
-  text-align: center;
 }
 
 span {
   font-size: var(--font-size-medium);
+  text-align: center;
 }
 
 button {
@@ -74,6 +75,7 @@ button:hover {
 #clock span {
   font-weight: bold;
   font-size: var(--font-size-medium);
+  text-align: center;
 }
 
 @keyframes fadeIn {
