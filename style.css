@@ -19,6 +19,7 @@ body {
   margin: 50px;
   display: block;
   color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 input {
@@ -29,7 +30,7 @@ input {
 }
 
 h1 {
-  font-size: var(--font-size-large);
+  font-size: 60px;
 }
 
 .form,
