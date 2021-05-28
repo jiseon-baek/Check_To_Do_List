@@ -39,6 +39,14 @@ input {
   text-align: center;
 }
 
+.form_js {
+  text-align: center;
+}
+
+.form_js input {
+  display: inline-block;
+}
+
 h1 {
   font-size: 100px;
   margin: 20px 0;
