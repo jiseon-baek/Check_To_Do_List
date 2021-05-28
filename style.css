@@ -29,6 +29,7 @@ body {
 }
 
 input {
+  margin: 0.5em;
   width: 400px;
   line-height: 32px;
   border-radius: 10px;
