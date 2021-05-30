@@ -3,7 +3,7 @@
 
 const body = document.querySelector('body');
 
-const Img_NB = 10;
+const IMG_NB = 10;
 
 function paintImage(imgNumber) {
     const image = new Image();
@@ -14,7 +14,7 @@ function paintImage(imgNumber) {
 }
 
 function genRandom() {
-    const number = Math.floor(Math.random() * Img_NB);
+    const number = Math.floor(Math.random() * IMG_NB);
     return number;
 };
 

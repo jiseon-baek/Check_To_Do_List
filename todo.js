@@ -6,7 +6,7 @@ const toDoForm = document.querySelector(".toDoForm_js"),
     toDoList = document.querySelector(".toDoList_js");
 
 
-const ToDos_LS = "toDos";
+const TODOS_LS = "toDos";
 
 let toDos = [];
 
@@ -63,7 +63,7 @@ function handleSubmit(event) {
 
 
 function loadToDos() {
-    const loadedToDos = localStorage.getItem(ToDos_LS);
+    const loadedToDos = localStorage.getItem(TODOS_LS);
     if(loadedToDos !== null) {
         const parsedToDos = JSON.parse(loadedToDos);
         parsedToDos.forEach(function(toDo) {
